@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Структурированная шпаргалка Python для middle-разработчика" />
+    <title>PY / CORE — шпаргалка middle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="На главную"><span>PY</span><i>/</i> CORE</a>
+      <button class="mobile-menu" aria-label="Открыть содержание">☰</button>
+      <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Поиск: например, декоратор" /><kbd>⌘ K</kbd></label>
+      <nav class="top-actions"><a href="#quick">быстрый старт</a><a href="#practice">практика</a></nav>
+    </header>
+
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-head"><span>СОДЕРЖАНИЕ</span><small>middle track</small></div>
+        <nav id="tree" class="tree" aria-label="Содержание"></nav>
+        <div class="sidebar-foot"><span class="pulse"></span> 34 темы · 12 модулей</div>
+      </aside>
+
+      <main id="content" tabindex="-1"></main>
+
+      <aside class="outline">
+        <p>НА ЭТОЙ СТРАНИЦЕ</p>
+        <nav id="outline-nav"></nav>
+        <div class="tip-card"><b>Совет</b><p>Сначала прочитай «суть», затем запусти пример и закрепи в задаче.</p></div>
+      </aside>
+    </div>
+    <div id="toast" class="toast" role="status">Ссылка скопирована</div>
+    <script src="app.js"></script>
+  </body>
+</html>
